@@ -1,15 +1,17 @@
-alumnos_list = ["Yolo", "Zolo"] #lista
+fmt=3
+def tablas(n:int, t:int):
+    for i in range(t):
+        multi(n, i+1)
+        print(f"{16:c}")
 
-# for i in range(len(alumnos_list)):
-#     print(f"Alumnos: {alumnos_list[i]}")
+def multi(number:int, table:int):
+    for i in range(number):
+        print(f"{table:^{fmt}}{'x':^{fmt}}{i+1:^{fmt}}{'=':^{fmt}}{table*(i+1):^{fmt}}")
     
-alumnos_tup = ("Yolo", "Zolo") #tuplas
+if __name__=="__main__":
 
-alumnos_set = {"Yolo", "Zolo"} #sets
-
-alumnos_dic = {"nombre":"Yolo", "materia":"Zolo"} #diccionarios
-#alumnos_tup[0]="hola"
-print(alumnos_dic["nombre"])
-
+    table=5
+    n_digits=10
+    tablas(4,4)
 
 #stram lit
