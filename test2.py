@@ -10,8 +10,10 @@ def multi(number:int, table:int):
     
 if __name__=="__main__":
 
-    table=5
-    n_digits=10
-    tablas(4,4)
+    if 10>15: #si 10 es mayor que 15 entonces...
+        print("Hola") # No se ejecuta
+    elif 10<15: #si 10 es menor que 15 entonces...
+        print("Mundo") # Se ejecuta
+    else:  #si no es ninguno de esos, entonces...
+        print("Adios") # Se ejecuta  
 
-#stram lit

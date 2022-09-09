@@ -48,6 +48,23 @@ from turtle import reset
 # for i in range(len(alumnos)):
 #     print(f"{alumnos[i]:^10}{m_estadistica[i]:^10}{m_programacion[i]:|^10}{m_ingles[i]:^10}")
 
-#--------------Big nombers
+#listas
+lista=[]
+lista1=[10,20,30]
+for i in range(1, 11):
+    lista.append(i) #.append agrega todo a final de la lista
+    
+lista.extend(lista1) #de esta manera podemos agregar al final todo lo que querramos
+del lista[2] #funcion del elimina el elemento de la posicion indicada
+print(lista)
 
 
+# print(lista)
+# print(lista[-5:-7]) #lista[inicio : final] imprimirá en el rango 
+# print(lista[-5:-7]) #imprimirá tomando de derecha a izquierda
+
+# #copiar valores de una lista a otra
+
+# lista1=lista[:] #al usar slices podemos cambiar la direccion de memoria de una variable a otra
+# print(f"Direccion {id(lista)} lista: {lista}")
+# print(f"Direccion {id(lista1)} lista: {lista1}")
